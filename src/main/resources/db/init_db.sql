@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS finance;
+
+USE finance;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT(6) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  login VARCHAR(30),
+  name VARCHAR(30),
+  email VARCHAR(30),
+  phone VARCHAR(30),
+  INDEX(name)
+) engine=InnoDB;
